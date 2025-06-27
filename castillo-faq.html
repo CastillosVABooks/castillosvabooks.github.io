@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ - Castillo Virtual & Books</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f8f8;
+      color: #1e293b;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 15px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #ffffff;
+      transition: background 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background-color: #f0f0f0;
+    }
+
+    .faq-answer {
+      padding: 0 20px 15px 20px;
+      display: none;
+      background-color: #fcfcfc;
+      line-height: 1.6;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .cta {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .cta a {
+      background-color: #7f1d1d;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .cta a:hover {
+      background-color: #5f1414;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-question">What types of clients do you work with?</div>
+    <div class="faq-answer">
+      We support small to mid-sized business owners, solopreneurs, and busy professionals who need trusted virtual assistance and bookkeeping.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">What services do you offer?</div>
+    <div class="faq-answer">
+      - Executive Virtual Assistance<br>
+      - Calendar & Email Management<br>
+      - Travel Planning & Expense Tracking<br>
+      - Bookkeeping & Financial Recordkeeping<br>
+      - Invoicing & Client Follow-Up<br>
+      - Admin Support for Reports, Events, and Projects
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Can I customize the services I need?</div>
+    <div class="faq-answer">
+      Yes! You can choose standalone packages or combine both VA and Bookkeeping services for a custom monthly plan.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">How do I get started?</div>
+    <div class="faq-answer">
+      Book a free consultation at <a href="https://calendly.com/castillosvabooks" target="_blank">castillosvabooks.com/contact</a>.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">What does onboarding look like?</div>
+    <div class="faq-answer">
+      After sign-up, you’ll receive a Welcome Packet, Service Agreement, Invoice Schedule, and a kickoff call to begin.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Do you offer ongoing or one-time support?</div>
+    <div class="faq-answer">
+      We offer both monthly retainers for ongoing support and one-time project options for event prep, audits, or catch-up work.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Is my information secure?</div>
+    <div class="faq-answer">
+      Yes. We use encrypted tools, password protection, and secure cloud platforms. NDAs are available upon request.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">How is pricing structured?</div>
+    <div class="faq-answer">
+      Pricing is based on task scope and frequency. We’ll outline everything clearly in your discovery call.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">What’s your cancellation policy?</div>
+    <div class="faq-answer">
+      We ask for a 30-day initial commitment. After that, it's month-to-month with a 14-day notice.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">What makes Castillo Virtual & Books different?</div>
+    <div class="faq-answer">
+      With 10+ years of experience, we bring professionalism and a boutique feel. We’re the Desk Behind Your Business.
+    </div>
+  </div>
+
+  <div class="cta">
+    <a href="https://calendly.com/castillosvabooks" target="_blank">Book a Discovery Call</a>
+  </div>
+
+  <script>
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        q.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
